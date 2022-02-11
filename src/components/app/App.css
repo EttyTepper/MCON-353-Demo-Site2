@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+#name {
+  color: blue;
+  font-style: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 15%;
+  margin-top: 15%;
+}
+
+#accordian {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cs {
+  clear: right;
+  float: left;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  width: 40%;
+}
+
+#cards {
+  margin-left: 10%;
+}
