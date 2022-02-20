@@ -11,14 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-#name {
-  color: blue;
-  text-align: center;
-  margin-bottom: 15%;
-  size: 500px;
-}
-
-Accordian {
-  size: 50%;
-}
