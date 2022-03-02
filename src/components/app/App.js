@@ -1,5 +1,5 @@
 import './App.css';
-
+import  { useState} from "react";
 import * as React from 'react';
 import {
   BrowserRouter,
@@ -10,11 +10,15 @@ import {Home} from '../home/home';
 import {Todo} from '../todo/todo';
 import {Header} from '../header/header';
 
-// const TodoContext = React.createContext();
+export const TodoContext = React.createContext();
+ 
 function App() {
+  const [tasks, setTasks] = useState([
+  ]);
   return (
+    
     <div> 
-   
+   <TodoContext.Provider value={{tasks, setTasks}}>
    <BrowserRouter>
    <Header />
     <Routes>
@@ -25,7 +29,7 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
-    
+  </TodoContext.Provider>
 
     </div>
     

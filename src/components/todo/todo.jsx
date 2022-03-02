@@ -1,11 +1,12 @@
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './todo.css';
+import {TodoContext} from '../app/App.js'
 
 
 function TodoControl() {
-    const [tasks, setTasks] = useState([
-    ]);
+    const {tasks, setTasks} = useContext( TodoContext
+    );
 
     const addTask = title => {
         const newTasks = [...tasks, { title, completed: false }];
