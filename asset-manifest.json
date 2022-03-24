@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MCON-353-Demo-Site2/static/css/main.1eaf803f.css",
+    "main.js": "/MCON-353-Demo-Site2/static/js/main.2601eb1a.js",
+    "static/js/787.11c6ca97.chunk.js": "/MCON-353-Demo-Site2/static/js/787.11c6ca97.chunk.js",
+    "index.html": "/MCON-353-Demo-Site2/index.html",
+    "main.1eaf803f.css.map": "/MCON-353-Demo-Site2/static/css/main.1eaf803f.css.map",
+    "main.2601eb1a.js.map": "/MCON-353-Demo-Site2/static/js/main.2601eb1a.js.map",
+    "787.11c6ca97.chunk.js.map": "/MCON-353-Demo-Site2/static/js/787.11c6ca97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1eaf803f.css",
+    "static/js/main.2601eb1a.js"
+  ]
+}
