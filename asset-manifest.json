@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/MCON-353-Demo-Site2/static/css/main.1eaf803f.css",
-    "main.js": "/MCON-353-Demo-Site2/static/js/main.d81c7198.js",
+    "main.css": "/MCON-353-Demo-Site2/static/css/main.13a422a7.css",
+    "main.js": "/MCON-353-Demo-Site2/static/js/main.ade11d22.js",
     "static/js/787.11c6ca97.chunk.js": "/MCON-353-Demo-Site2/static/js/787.11c6ca97.chunk.js",
+    "static/media/tourocollege.png": "/MCON-353-Demo-Site2/static/media/tourocollege.b30580c591e88d47fb9f.png",
+    "static/media/computerscience.jpg": "/MCON-353-Demo-Site2/static/media/computerscience.3e4815e22be0eb863fd0.jpg",
     "index.html": "/MCON-353-Demo-Site2/index.html",
-    "main.1eaf803f.css.map": "/MCON-353-Demo-Site2/static/css/main.1eaf803f.css.map",
-    "main.d81c7198.js.map": "/MCON-353-Demo-Site2/static/js/main.d81c7198.js.map",
+    "main.13a422a7.css.map": "/MCON-353-Demo-Site2/static/css/main.13a422a7.css.map",
+    "main.ade11d22.js.map": "/MCON-353-Demo-Site2/static/js/main.ade11d22.js.map",
     "787.11c6ca97.chunk.js.map": "/MCON-353-Demo-Site2/static/js/787.11c6ca97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1eaf803f.css",
-    "static/js/main.d81c7198.js"
+    "static/css/main.13a422a7.css",
+    "static/js/main.ade11d22.js"
   ]
 }
