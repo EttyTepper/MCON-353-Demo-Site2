@@ -1,7 +1,7 @@
 
 import React, { useState, useContext } from 'react';
 import './todo.css';
-import {TodoContext} from '../app/App.js'
+import {TodoContext} from '../todo/context';
 
 
 function TodoControl() {
@@ -15,7 +15,7 @@ function TodoControl() {
 
     const completeTask = index => {
         const newTasks = [...tasks]; //shorthand for everything in tasks
-        newTasks[index].completed = true;
+        newTasks[index].completed = true;  
         setTasks(newTasks);
     };
 
@@ -57,6 +57,7 @@ function CreateTask({ addTask }) {
     }
 
     return (
+        <div data-testid="todo">
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
@@ -67,7 +68,9 @@ function CreateTask({ addTask }) {
             />
 
         </form>
+        </div>
     )
+    
 }
 
 function Task({ task, index, completeTask, removeTask }) {

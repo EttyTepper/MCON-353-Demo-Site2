@@ -2,24 +2,25 @@ import './App.css';
 import  { useState} from "react";
 import * as React from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
 import {Home} from '../home/home';
 import {Todo} from '../todo/todo';
 import {Header} from '../header/header';
+import {Chat} from '../chat/chat';
+import { TodoProvider } from '../todo/context.jsx';
 
-export const TodoContext = React.createContext();
  
 function App() {
-  const [tasks, setTasks] = useState([
-  ]);
+  
   return (
     
     <div> 
-   <TodoContext.Provider value={{tasks, setTasks}}>
-   <BrowserRouter>
+   {/* <Provider value={{tasks, setTasks}}> */}
+   <TodoProvider>
+   <HashRouter>
    <Header />
     <Routes>
       <Route path="/" element={<Home/>}></Route> {/*Route is top level domain*/}
@@ -27,9 +28,12 @@ function App() {
       {/* if the two paths would be nested, both would show up at the same time, not what we want right now.
        sometimes you will want that like when you want the header to appear on every page */}
       </Route>
+      <Route path="/chat" element={<Chat />}></Route>
     </Routes>
-  </BrowserRouter>
-  </TodoContext.Provider>
+  </HashRouter>
+  
+  </TodoProvider>
+  {/* </TodoContext.Provider> */}
 
     </div>
     

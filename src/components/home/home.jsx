@@ -11,6 +11,8 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import CS from "../../images/computerscience.jpg";
+import TouroCollegeImg from "../../images/tourocollege.png"
 //import Button from '@mui/material/Button';
 //import Typography from '@mui/material/Typography';
 
@@ -69,7 +71,7 @@ export const Home = () =>{
       <CardMedia
         component="img"
         height="150"
-        image="computerscience.jpg"
+        image={CS}
         alt="computer science"
       />
       <CardContent>
@@ -87,7 +89,7 @@ export const Home = () =>{
       <CardMedia
         component="img"
         height="150"
-        image="tourocollege.png"
+        image={TouroCollegeImg}
         alt="Touro College"
       />
       <CardContent>

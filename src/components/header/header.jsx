@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = [{title: 'Home', path: '/'},{title: 'Todo', path: '/todo'}];
+const pages = [{title: 'Home', path: '/'},{title: 'Todo', path: '/todo'}, {title: 'Chat', path: '/chat'}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export const Header = () => {

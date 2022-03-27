@@ -1,0 +1,54 @@
+body {
+  background: white;
+}
+
+.chat-container {
+  background: white;
+  width: 50vw;
+  height: 30vw;
+  margin: 3em auto;
+  border-radius: 15px;
+  padding: 20px 10px;
+  color: black;
+  border: 3px solid rgb(36, 110, 194);
+}
+
+.message {
+  border: 1.5px solid green;
+  border-radius: 5px;
+  background-color: lightgreen;
+  clear: both;
+  float: left;
+  width: 15%;
+  padding: 0.5em;
+  margin-left: 30%;
+  margin-bottom: 2%;
+}
+
+.messageUsername {
+  border: 1.5px solid red;
+  border-radius: 5px;
+  background-color: palevioletred;
+  clear: both;
+  float: right;
+  width: 15%;
+  padding: 0.5em;
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
+
+.header {
+  margin: 0.5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.create-message input[type="text"] {
+  outline: none;
+  border: none;
+}
+
+.msgEntry {
+  margin-top: 4%;
+  margin-left: 25%;
+}
