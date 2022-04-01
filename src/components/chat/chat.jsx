@@ -37,10 +37,19 @@ function ChatControl() {
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
-  };
+        fetch(
+          `https://z36h06gqg7.execute-api.us-east-1.amazonaws.com/chats`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            setChats(data.Items);
+          });
+      }
+      
   const handleClose = () => {
     setAnchorEl(null);
   };
+
     const addChat = title => {
       const chat = {
         name: title
@@ -54,22 +63,6 @@ function ChatControl() {
       });
    
     };
-
-
-    useInterval(
-      () => {
-        fetch(
-          `https://z36h06gqg7.execute-api.us-east-1.amazonaws.com/chats`
-        )
-          .then((response) => response.json())
-          .then((data) => {
-            setChats(data.Items);
-          });
-      },
-       1000, // fast polling
-     // 60000, // slow polling
-    );
-
     
     useInterval(
   (params) => {
@@ -84,13 +77,12 @@ function ChatControl() {
   },
    1000, // fast polling
  // 60000, // slow polling
+
   currChat.id
 );
 
 
     return (
-
-
         <div className="chat-container">
             <div className="header">{currChat.name}</div>
             <div className="menudropdown">
@@ -151,16 +143,10 @@ function ChatControl() {
         
               </Box> 
             </div>
-            
-           
-         
+                   
             <div className="create-message" >
                 <CreateMessage addMessage={addMessage} />
-               
             </div>
-            
-           
-
         </div>
     )
 }
@@ -239,9 +225,7 @@ function CreateMessage( props ) {
         placeholder="Enter a message"
         onChange={e => setValue(e.target.value)}
       />
-           
-      
- 
+          
         <Button  variant="contained" endIcon={<SendIcon />} onClick= {handleSubmit}>
             
             Send
@@ -276,23 +260,17 @@ function CreateMessage( props ) {
     />
  
   </Box>
-   
-
     )
   }
-
 
 function Message(props) {
     return (
       
         <div
-            className={props.message.username === props.username ? "messageUsername" : "message"}
-            
+            className={props.message.username === props.username ? "messageUsername" : "message"}  
         >
             {props.message.text}
-         
         </div>
-
     )
 }
 

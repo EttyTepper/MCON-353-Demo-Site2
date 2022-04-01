@@ -1,6 +1,5 @@
 import './home.css';
-import { Button, Slider } from "@mui/material";
-//import React, {useState} from "react";
+import { Button } from "@mui/material";
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -12,9 +11,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CS from "../../images/computerscience.jpg";
-import TouroCollegeImg from "../../images/tourocollege.png"
-//import Button from '@mui/material/Button';
-//import Typography from '@mui/material/Typography';
+import TouroCollegeImg from "../../images/tourocollege.png";
 
 export const Home = () =>{
   return (

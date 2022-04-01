@@ -1,5 +1,4 @@
 import './App.css';
-import  { useState} from "react";
 import * as React from 'react';
 import {
   HashRouter,
@@ -18,7 +17,6 @@ function App() {
   return (
     
     <div> 
-   {/* <Provider value={{tasks, setTasks}}> */}
    <TodoProvider>
    <HashRouter>
    <Header />
@@ -33,7 +31,6 @@ function App() {
   </HashRouter>
   
   </TodoProvider>
-  {/* </TodoContext.Provider> */}
 
     </div>
     
